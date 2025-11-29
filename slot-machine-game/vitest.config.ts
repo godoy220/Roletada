@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  plugins: [react()],
+  // O 'as any' aqui força o sistema a aceitar o plugin mesmo com versões diferentes
+  plugins: [react()] as any,
   test: {
     globals: true,
     environment: 'jsdom',

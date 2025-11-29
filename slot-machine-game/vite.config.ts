@@ -9,6 +9,9 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
+  // Configuração para o GitHub Pages
+  base: "/Roletada/",
+
   plugins,
   resolve: {
     alias: {
